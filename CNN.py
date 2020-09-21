@@ -82,6 +82,7 @@ model.evaluate(test_x,test_y)
 test_no=int(input('please input photo number of test data: '))
 plt.imshow(test_x[test_no].reshape(28,28))
 print(f'it is {np.argmax(test_y[test_no])}')
-pred=model.predict_classes(test_x[test_no:test_no+1])
+pred = np.argmax(model.predict(test_x[test_no:test_no+1]))
+#pred=model.predict_classes(test_x[test_no:test_no+1]) #model.predict_classes 將在2021年刪除
 print(f'predict it is {pred}')
 
