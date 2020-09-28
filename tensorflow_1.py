@@ -3,7 +3,7 @@ import numpy as np
 from keras.models import Sequential
 from keras.datasets import mnist
 from keras.layers import Dense, Dropout, Activation, Flatten
-from keras.utils import np_utils  # 用來後續將 label 標籤轉為 one-hot-encoding  
+from keras.utils import np_utils  # 用來後續將 label 標籤轉為 one-hot-encoding
 from matplotlib import pyplot as plt
 
 # 載入 MNIST 資料庫的訓練資料，並自動分為『訓練組』及『測試組』
