@@ -7,8 +7,12 @@ import urllib.request
 from sklearn.model_selection import train_test_split
 from IPython.core import history
 
-#urllib.request.urlretrieve('https://storage.googleapis.com/quickdraw_dataset/full/numpy_bitmap/cat.npy','cat.npy')
-#urllib.request.urlretrieve('https://storage.googleapis.com/quickdraw_dataset/full/numpy_bitmap/dog.npy','dog.npy')
+dataset_url ="https://storage.googleapis.com/quickdraw_dataset/full/numpy_bitmap/cat.npy"
+data_dir = tf.keras.utils.get_file(
+    origin=dataset_url, fname='flower_photos', untar=True)
+dataset_url = "https://storage.googleapis.com/quickdraw_dataset/full/numpy_bitmap/dog.npy"
+data_dir = tf.keras.utils.get_file(
+    origin=dataset_url, fname='flower_photos', untar=True)
 
 cat = np.load('cat.npy', encoding='bytes', allow_pickle=True)
 dog = np.load('dog.npy', encoding='bytes', allow_pickle=True)
