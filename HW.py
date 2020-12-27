@@ -38,4 +38,4 @@ print('train accuracy:', score[1])
 score = model.evaluate(x_test, y_test)
 print('Test accuracy:', score[1])
 
-#model.save('model.h5')
+model.save('model.h5')
