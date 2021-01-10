@@ -1,9 +1,9 @@
 import numpy as np
 
-from keras.datasets import mnist
-from keras.models import Sequential
-from keras.layers import Dense, Activation, Conv2D, MaxPooling2D, Flatten, Dropout
-from keras.utils import np_utils
+from tensorflow.keras.datasets import mnist
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Activation, Conv2D, MaxPooling2D, Flatten, Dropout
+from tensorflow.keras.utils import np_utils
 
 input_size = 784
 
