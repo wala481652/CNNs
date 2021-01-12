@@ -1,0 +1,8 @@
+pip install package 安裝套件
+pip install -U package 更新套件
+pip uninstall package 移除安裝過的套件
+pip install -v package==1.0 安裝並且指定套件版本
+pip list 查看目前安裝過的清單
+pip install -r requirements.txt 安裝 requirements.txt 內的清單
+pip freeze > requirements.txt 將安裝過的套件建立成 requirements.txt 文件清單
+

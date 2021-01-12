@@ -1,0 +1,11 @@
+conda --version 檢視 conda 版本
+conda update PACKAGE_NAME 更新指定套件
+conda --help 檢視 conda 指令說明文件
+conda list --ENVIRONMENT 檢視指定工作環境安裝的套件清單
+conda install PACAKGE_NAME=MAJOR.MINOR.PATCH 在目前的工作環境安裝指定套件
+conda remove PACKAGE_NAME 在目前的工作環境移除指定套件
+conda create --name ENVIRONMENT python=MAIN.MINOR.PATCH 建立新的工作環境且安裝指定 Python 版本
+conda activate ENVIRONMENT 切換至指定工作環境
+conda deactivate 回到 base 工作環境
+conda env export --name ENVIRONMENT --file ENVIRONMENT.yml 將指定工作環境之設定匯出為 .yml 檔藉此複製且重現工作環境
+conda remove --name ENVIRONMENT --all 移除指定工作環境
